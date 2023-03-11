@@ -1,4 +1,4 @@
-const IncomeSchema = require("../models/incomemodel");
+const IncomeSchema = require("../models/IncomeModel");
 
 
 
