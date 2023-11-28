@@ -11,7 +11,9 @@ require('dotenv').config()
 
  //middlewares
  app.use(express.json())
- app.use(cors())
+ app.use(cors({
+  origin : "https://luminous-chebakia-278d94.netlify.app"
+ }))
 
  //routes 
  readdirSync('./routes').map((route) => app.use('/api/v1', require('./routes/' + route)))
